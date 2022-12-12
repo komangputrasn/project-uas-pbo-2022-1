@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="953.0" style="-fx-background-color: #202225;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.uaspbo.LoginController">
+   <children>
+      <Text fill="WHITE" layoutX="71.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!">
+         <font>
+            <Font name="System Bold" size="57.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="76.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We're glad to see you back! Please log in to continue" wrappingWidth="526.21728515625">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="76.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="526.21728515625">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="76.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="526.21728515625">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameTxtField" layoutX="77.0" layoutY="224.0" prefHeight="25.0" prefWidth="348.0" style="-fx-background-color: #36393F; -fx-text-fill: #FFFFFF;" />
+      <PasswordField fx:id="passwordField" layoutX="77.0" layoutY="296.0" prefHeight="25.0" prefWidth="348.0" style="-fx-background-color: #36393F; -fx-text-fill: #FFF;" />
+      <Button fx:id="loginBtn" layoutX="80.0" layoutY="352.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="153.0" style="-fx-background-color: #5865F2;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginAsMentorBtn" layoutX="77.0" layoutY="534.0" mnemonicParsing="false" onAction="#switchToMentorLogin" prefHeight="17.0" prefWidth="168.0" style="-fx-background-color: #272A2E;" text="Login in as a mentor" textFill="WHITE" />
+      <Button fx:id="loginAsAdminBtn" layoutX="268.0" layoutY="534.0" mnemonicParsing="false" onAction="#switchToAdminLogin" prefHeight="17.0" prefWidth="168.0" style="-fx-background-color: #272A2E;" text="Login as an admin" textFill="WHITE" />
+      <ImageView fitHeight="299.0" fitWidth="445.0" layoutX="456.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/illus%20log%20in%20page_1.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="signupBtn" layoutX="257.0" layoutY="352.0" mnemonicParsing="false" onAction="#switchToSignup" prefHeight="33.0" prefWidth="168.0" style="-fx-background-color: #36393F;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
